@@ -8,7 +8,7 @@ description = 'Java CF Env Core Library'
 dependencies {
     api 'com.cedarsoftware:json-io:4.14.0'
 
-    testImplementation "org.springframework.boot:spring-boot-starter-test"
+    testImplementation "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"
     testImplementation "junit:junit"
     testImplementation "org.jmockit:jmockit:${jmockitVersion}"
 
@@ -17,7 +17,7 @@ dependencies {
     }
 
     testFixturesApi platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
-    testFixturesImplementation "org.springframework.boot:spring-boot-starter-test"
+    testFixturesImplementation "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"
     testFixturesImplementation "org.jmockit:jmockit:${jmockitVersion}"
 }
 
